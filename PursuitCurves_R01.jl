@@ -21,7 +21,7 @@ pursuit(u, k, t) = k * (pursued(t) - u) / norm(pursued(t)-u)
 
 ## Pursued Running in a Circle
 pursued(t) = [cos(t), sin(t)]
-prob = ODEProblem(pursuit, [4.0, 0.0], (0.0, 17), 0.8)
+prob = ODEProblem(pursuit, [2.0, 0.0], (0.0, 17), 0.8)
 sol = solve(prob, saveat=0.1);
 N = length(sol.t)
 
