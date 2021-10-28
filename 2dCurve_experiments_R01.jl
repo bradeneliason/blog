@@ -32,7 +32,7 @@ plot!(title="Swimming Dog Curves",
     aspect_ratio=:equal,
     size=(500,500),
 )
-savefig("./images/swimmingdog_cruves_R01.png")
+savefig("./images/swimmingdog_curves_R01.png")
 
 ## Tractrix
 # https://mathcurve.com/courbes2d.gb/tractrice/tractrice.shtml
@@ -48,4 +48,4 @@ for (s, p) in zip(tx_solns, params)
     plot!(s, vars=(1,2), label="$p", lw=3)
 end
 plot!(title="Tractrix Curves", xlims=(0,30), frame=:zerolines)
-savefig("./images/tractrix_cruves_R01.png")
+savefig("./images/tractrix_curves_R01.png")
